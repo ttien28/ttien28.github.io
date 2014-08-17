@@ -1,25 +1,106 @@
+html{
+  background-image: url(http://healthpsychology.ucsf.edu/sites/healthpsychology.ucsf.edu/files/wysiwyg/GGBridge%20at%20dusk.jpg);
+}
+
 #divRight{
   float: right;
   width: 25%;
+  display: block;
 }
 
+#divLeft{
+  float: left;
+  width: 60%;
+font-family: 'Droid Sans', sans-serif;
+}
 #header{
-  font-family: Arial;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: none;
   text-align: center;
+  font-size: 50px;
+  color: #FFFFFF;
+
+
 }
 
+#line3{
+  font-size: 20px;
+}
+
+#banner{
+font-family: 'Droid Sans', sans-serif;
+font-size: 40px;
+color: #FFFFFF;
+border-radius: 10px;
+padding-bottom: -100px;
+margin-top: 80px;
+}
+
+footer{
+  clear: both;
+  text-align: center;
+  font: #FFFFFF;
+  font-family: 'Droid Sans', sans-serif;
+  /*position: relative;*/
+  margin-bottom: -70px;
+  padding-top: 10%;
+}
+
+#nav{
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Droid Sans', sans-serif;
+  text-decoration: none;
+  font-color: black;
+  border-bottom: 6px dashed #FFFFFF;
+}
 
 #line1{
   font-size: 50px
 }
 
-#line3{
-  font-size: 10px
+#line2{
+font-size: 25px;
 }
+
+
 
 a:hover {
   color: #cc0000;
   font-weight: bold;
   text-decoration: none;
+}
+
+.selfpicture{
+  width: 200px;
+  float: right;
+  display: block;
+}
+
+section{
+  display: block;
+}
+
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.fa-arrow-circle-left{
+color: blue;}
+
+.fa {
+color: blue;
+font-size: 100em}
+
+.fa-arrow-double-left{
+color: blue;
+font-size: 30em;
+}
+
+.fa-angle-double-left:before {
+content: "\f100";
+color:  red;
 }
