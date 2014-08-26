@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Technical Blog</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/compare-websites.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+    </head>
+
+        <body>
+            <div id="header">
+                <h1 id="name">Blogs</h1>
+              </div>
+<div id="image">
+<img src ="collections_enum.png">
+</div>
+
+<div id ="content">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <h2 >Technical Blog: Enumerable Methods - Ruby</h2>
+    <p id="date">August 25<sup>th</sup>, 2014</p>
+
+    <div id = content>
+    <h3>Enumberable Methods: Using .map</h3>
+    <p> Enumerables in Ruby provide a set of methods to traverse, search, sort and manipulate collections of elements.
+
+      <h3>What does .map do?</h3>
+      <p> The map method takes an enumerable object and a block, and runs the block for each element, outputting each returned value from the block (the original object is unchanged unless you use map!) </p>
+
+<p>You can transfer each element in an array by using a for loop. In the example below, we are iterating through each element and making it print as a negative number:</p>
+<img src="map_1.png" alt "map example">
+
+<p>However, what if we didn't want to modify <em>arr</em> ? What if you just wanted a transformed copy of <em>arr</em> without altering the original? We can now use the enumerable "map" (also known as "collect"):</p>
+<img src="map_2.png" alt "map example">
+
+<p> The map method returns a copy of the its invoking collection, which is why we can immediately chain the join method to its result, brr. Meanwhile, the original arr retains its unaltered values. Like "each" (in fact, map, and all the other Enumerable iterating methods are based off of each), map is invoked by a collection and accepts a block of code that acts upon each element in that collection. The main difference is that map returns that transformed collection:</p>
+<img src="map_3.png" alt "map example">
+<p> There is no need to initialize <em>ark2</em> on its own line. As with methods, the last line in the code block is the value that will be part of the transformed collection. </p>
+<img src="map_4.png" alt "map example">
+
+<footer>&copy; Tina Tien 2014 </footer>

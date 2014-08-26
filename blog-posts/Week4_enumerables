@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Technical Blog</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/compare-websites.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+    </head>
+
+        <body>
+            <div id="header">
+                <h1 id="name">Blogs</h1>
+              </div>
+<div id="image">
+<img src ="collections_enum.png">
+</div>
+
+<div id ="content">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <h2 >Technical Blog: Enumerable Methods - Ruby</h2>
+    <p id="date">August 25<sup>th</sup>, 2014</p>
+
+    <div id = content>
+    <h3>Enumberable Methods: Using .map</h3>
+    <p> Enumerables in Ruby provide a set of methods to traverse, search, sort and manipulate collections of elements.
+
+      <h3>What does .map do?</h3>
+      <p> The map method takes an enumerable object and a block, and runs the block for each element, outputting each returned value from the block (the original object is unchanged unless you use map!) Here\'s can example
