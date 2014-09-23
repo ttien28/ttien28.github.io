@@ -31,9 +31,9 @@ font-family: 'Droid Sans', sans-serif;
 font-family: 'Droid Sans', sans-serif;
 font-size: 40px;
 color: #FFFFFF;
-border-radius: 10px;
+/*/*border-radius: 10px;*/
 padding-bottom: -100px;
-margin-top: 80px;
+margin-top: 80px;*/
 }
 
 footer{
@@ -71,11 +71,11 @@ a:hover {
   text-decoration: none;
 }
 
-.selfpicture{
+./*selfpicture{
   width: 200px;
   float: right;
   display: block;
-}
+}*/
 
 section{
   display: block;
