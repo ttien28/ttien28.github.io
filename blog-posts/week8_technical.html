@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Technical Blog</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/compare-websites.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+    </head>
+
+        <body>
+            <div id="header">
+                <h1 id="name">Blogs</h1>
+              </div>
+              <!-- <div id="image">
+<img src ="success7.png">
+</div> -->
+<div id ="content">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <h2 >Technical Blog: The Basics of Active Record</h2>
+    <p id="date">September 22<sup>st</sup>, 2014</p>
+    <div id = content>
+    <h3>Active Record: The &quot;M&quot; in MVP</h3>
+    <p>Active Record is the &quot;M&quot; in MVC (Model-View-Controller) which is the layer of the system responsible for representing business data and logic. Before we get into Active Record, we need to dwelve into MVW, <em>Model-View-Controller</em>.</p>
+
+    <h3>Model-View-Controller (MVP)</h3>
+      <ol>
+        <li>Models</li>
+          <ul>
+            <li>Models represent knowledge. A model could be a single object, or it could be some structure of objects. There should be a one-to-one correspondence between the model and its parts on the one hand, and the represented world as perceived by the owner of the model on the other hand.</li>
+          </ul>
+          <li>Views</li>
+            <ul>
+              <li> A view is a visual representation of its model. It would ordinarily highlight certain attributes of the model and suppress others. It is thus acting as a presentation filter. A view is attached to its model (or model part) and gets the data necessary for the presentation from the model by asking questions. It may also update the model by sending appropriate messages. All these questions and messages have to be in the terminology of the model, the view will therefore have to know the semantics of the attributes of the model it represents. </li>
+            </ul>
+            <li>Controllers</li>
+            <ul>
+              <li>A controller is the link between a user and the system. It provides the user with input by arranging for relevant views to present themselves in appropriate places on the screen. It provides means for user output by presenting the user with menus or other means of giving commands and data. The controller receives such user output, translates it into the appropriate messages and pass these messages on to one or more of the views. </li>
+
+              <p>The MVC Model</p>
+              <img src = MVC_image.png>
+              <p> A simple example of MVC is this:</p>
+              <ul>
+                  <li>Model = HTML </li>
+                  <li>View = CSS </li>
+                  <li> Controller = Browser</li>
+                </ul>
+
+                <h3>Back to Active Record</h3>
+                  <p>In Active Record, objects carry both persistent data and behavior which operates on that data. Active Record takes the opinion that ensuring data access logic is part of the object will educate users of that object on how to write to and read from the database.</p>
+                  <h3> What things can Active Record do?</h3>
+                  <ol>
+                    <li>Represents models and their data.</li>
+                    <li>Represent associations between these models.</li>
+                    <li>Represent inheritance hierarchies through related models. </li>
+                    <li>Validate models before they get persisted to the database. </li>
+                    <li>Perform database operations in an object-oriented fashion.</li>
+                  </ol>
+</div>
+
+
+
+
+
+                  <footer>&copy; 2014, Tina Tien Dev Bootcamp
+
+
+
+
+
