@@ -1,0 +1,246 @@
+html {
+  background-color: #e9eaed;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2em;
+  margin: 0px auto;
+  min-width: 960px;
+  width: 100%;
+  padding: 20px;
+   font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#footer {
+  font-size: 20px;
+}
+
+#links{
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 25px;
+}
+.box{
+border: 2px solid;
+border-radius: 25px;
+padding: 10px;
+background-color: white;
+width: 90%
+}
+
+
+
+
+header {
+  background-color: #CCFFCC;
+  height: 60px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#main {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+#navBar {
+  background-image:
+    -webkit-linear-gradient(top, #CCFFCC, #e9eaed);
+  background-image:
+    -moz-linear-gradient(top, #CCFFCC, #e9eaed);
+  background-image:
+    -ms-linear-gradient(top, #CCFFCC, #e9eaed);
+  background-image:
+    -linear-gradient(to bottom, #CCFFCC, #e9eaed);
+  margin-top: 1%;
+  width: 10%;
+  float: left;
+}
+
+#navBar ul li {
+  text-align: left;
+  font-family: 'Share';
+  font-size: 1em;
+}
+
+#leftArticle {
+  background-color: #fff;
+  float: left;
+  width: 41%;
+  overflow: hidden;
+  margin: 1%;
+  display: inline-block;
+  text-align: left;
+  text-indent: 10px;
+  padding: 1%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+#leftArticle img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 500px;
+  width: 500px;
+}
+
+#leftArticle a:link, #leftArticle a:visited {
+  color: #4A7171;
+  font-weight: bold;
+}
+
+#rightArticle {
+  background-color: #fff;
+  float: left;
+  width: 41%;
+  overflow: hidden;
+  margin: 1%;
+  display: inline-block;
+  text-align: left;
+  text-indent: 10px;
+  padding: 1%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+#rightArticle img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 500px;
+  width: 500px;
+}
+
+#rightArticle a:link, #rightArticle a:visited {
+  color: #4A7171;
+  font-weight: bold;
+}
+
+#profilePic img{
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerBody {
+  margin-top: 10px;
+  background-image:
+    -webkit-linear-gradient(top, #CCFFCC, #fff);
+  background-image:
+    -moz-linear-gradient(top, #CCFFCC, #fff);
+  background-image:
+    -ms-linear-gradient(top, #CCFFCC, #fff);
+  background-image:
+    -linear-gradient(to bottom, #CCFFCC, #fff);
+  font-size: 1.5em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  clear: both;
+  font-size: 0.5em;
+}
+
+@media screen and (max-width: 1024px){
+    #main{
+      width:100%;
+      margin: auto;
+    }
+
+    #navBar {
+      width: 8%;
+      font-size: 80%;
+    }
+
+    #leftArticle {
+      width: 41%;
+    }
+
+    #rightArticle {
+      width: 41%;
+    }
+    /*img {
+      width: 100%
+    }*/
+  }
+
+@media screen and (min-width: 320px) and (max-width: 845px){
+    header {
+      text-align: left;
+      font-size: 1em;
+    }
+
+    #main{
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    #navBar {
+      width: 43%;
+    }
+    #navBar li {
+      display:inline;
+    }
+
+    #leftArticle {
+      clear: left;
+    }
+
+    #rightArticle {
+      clear: left;
+    }
+    /*img {
+      width: 100%;
+    }*/
+    footer {
+      text-align: center;
+      width: 41%;
+      margin-top: 10px;
+      clear: both;
+      font-size: 0.5em;
+    }
+}
+
+
+
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.todaysDate {
+  font-size: 0.7em;
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
