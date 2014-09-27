@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+  <title>Ruby Hashes, Arrays, Strings, Integers</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/unit3_cheatsheet.css" />
+    <link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel="stylesheet" type="text/css">
+   <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<header>
+  <p>Week 8 - Ruby Cheatsheet</p>
+  <p id = "links">
+  <a href="unit3_cheatsheet.html#hashes">Hashes</a>&nbsp;&nbsp;
+    <a href="unit3_cheatsheet.html#arrays">Arrays</a>&nbsp;&nbsp;
+    <a href="unit3_cheatsheet.html#strings">Strings</a>&nbsp;&nbsp;
+    <a href="unit3_cheatsheet.html#integers">Integers</a>&nbsp;&nbsp;
+  </p>
+</header>
+
+<section>
+  <article class="entry">
+    <h3 id="hashes">Hashes</h3>
+      <p>A hash is a collection of key-value pairs like this: "employee" => "salary". It is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index.</p>
+      <div class = "box">
+        <p>First, you will need to create a new hash.</p>
+        <p>months = Hash.new</p>
+        <p>You can also create it with a default value, which is otherwise just nil.</p>
+        <p>months = Hash.new("month")</p>
+        <p>or</p>
+        <p>months = Hash.new "month"</p>
+        <p>But the hashes are good for keys and values.</p>
+        <p>months = {"1" => "January", "2" => "February"}</p>
+        <p>puts "#{months.keys}" => This will print ["1", "2"]</p>
+        <p>puts "#{months.values}" => This will print ["January", "February"]</p>
+        <p>In order to delete a value in a hash you could use delete method like below.</p>
+        <p>months.delete("1") => This will delete key "1" and value "January".</p>
+        <p>months.delete("2") => This will delete key "2" and value "February".</p>
+    </div>
+  </article class="entry">
+    <h3 id="arrays">Arrays</h3>
+       <p>Ruby arrays are ordered, integer-indexed collections of any object. Each element in an array is associated with and referred to by an index.Ruby arrays can hold objects such as String, </p>
+          <p>Integer, Fixnum, Hash, Symbol, even other Array objects. Ruby arrays are not as rigid as arrays in other languages. Ruby arrays grow automatically while adding elements to them.</p>
+        <p>There are many ways to create or initialize an array. One way is with the new class method:</p>
+      <div class = "box">
+        <p>names = Array.new</p>
+        <p>You can set the size of an array at the time of creating array:</p>
+        <p>names = Array.new(20)</p>
+        </p> OR</p>
+        <p>nums = Array.[](1, 2, 3, 4,5)</p>
+        <p> OR</p>
+        <p>nums = Array[1, 2, 3, 4,5]</p>
+      </div>
+      </article>
+
+  <article class="entry">
+    <h3 id="strings">Strings</h3>
+      <p>The simplest string literals are enclosed in single quotes (the apostrophe character). The text within the quote marks is the value of the string.</p>
+      <p>For example:</p>
+    <div class = "box">
+      <p>String notation:</p>
+      <p id="string_basic">"This is a string." #single quotes can also be used but string interpolation won't work on single-quoted strings</p>
+      <p id="string_basic"> puts "Two plus two is #{2+2}." => Two plus two is 4.</p>
+    </div>
+  </article>
+
+  <article class="entry">
+    <h3 id="integers">Integers</h3>
+      <p>Ruby integers are objects of class Fixnum or Bignum. The Fixnum and Bignum classes represent integers of differing sizes.</p>
+      <p>Both classes descend from Integer (and therefore Numeric). The floating-point numbers are objects of class Float, corresponding to the native architecture's double data type.</p>
+      <p>The Complex, BigDecimal, and Rational classes are not built-in to Ruby but are distributed with Ruby as part of the standard library.</p>
+    <div class = "box">
+      <p>When numbers are stored as strings, you can use .to_i method to make it integer.</p>
+      <p>numbers = "123" <= numbers is in strings form.</p>
+      <p>numbers + 4 will be invalid since you cannot add 4 to a string.</p>
+      <p>numbers.to_i + 4 => This will result in 127 because 123 is now an integer so you can add 4 to it.</p>
+      <p>There are number of methods that you can use for integers.</p>
+      <p>next is a way to get next number.</p>
+      <p>1.next => This is 2.</p>
+      <p>(-1).next => This is 0.</p>
+      <p>When you want to round up your number, you need to use round method.</p>
+      <p>This rounds integer to a given precision in decimal digits.</p>
+      <p>1.round => 1</p>
+      <p>1.round(2) => 1.0 </p>
+      <p>15.round(-1) => 20</p>
+    </div>
+  </article>
+
+</section>
+
+</body>
+
+
+<footer id = "footer"> Tina Tien & Youngsun Paik - Dev Bootcamp </footer>
+</html>
